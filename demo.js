@@ -97,3 +97,79 @@ The object data type can contain:
 3. A date
 
 */
+
+// function without parameter
+function myfunction(){
+    let selectID = document.getElementById("demo");
+    selectID.innerHTML = "Sample JS";
+    selectID.style.backgroundColor = "grey";
+    selectID.style.border = "1px solid red";
+}
+
+// function with parameter
+function sumOF(num1, num2){
+    let answer = parseInt(num1) + parseInt(num2);
+    document.getElementById("result").innerHTML = answer;
+}
+
+function trigger(){
+    let num1 = document.getElementById('num1').value;
+    let num2 = document.getElementById('num2').value;
+
+    sumOF(num1, num2);
+}
+// arrays
+let cars = ["Saab", "Volvo", "BMW", 1, true];
+
+//document.write(cars[0] + ' ' + cars[4]);
+
+//conditional statements
+// if
+//if else
+//if elseif else
+//switch
+//for-loop
+//while-loop
+
+//if
+// if(condition){
+//     //executed code if the condition is true
+// }
+
+// if(1 > 0){
+//     document.write('that is true');
+// }
+
+//if else
+// if(condition){
+//     //executed code if the condition is true
+// }else{
+    // executed code if the condition is false
+//}
+// if(1 < 0){
+//     document.write('that is true');
+// }else{
+//     document.write('that is false');
+// }
+
+//if elseif else
+// if(condition){
+//     //executed code if the condition is true
+// }elseif(condition){
+    // executed code if the second condition is true
+//}else{
+    //executed code if the all condition are false
+// }
+
+if(1 < 0){
+    document.write('that is true');
+    // if(){
+
+    // }
+}else if(1 < 0){
+    document.write('that is true for 2nd condition');
+}else if(1 > 0){
+    document.write('that is true for 3rd condition');
+}else{
+
+}
