@@ -316,38 +316,40 @@ while (condition) {
 //     document.write( text + "<br>");
 //     i++;
 //   }
-// let start = true;
-// while (start) {
-//   let input = parseInt(
-//     prompt(
-//       "Select: \n [1] Check Balance \n [2] Withdraw \n [3] Deposit \n [4] Exit"
-//     )
-//   );
-//   var bal = 5000;
-//   switch (input) {
-//     case 1:
-//       alert(bal);
-//       break;
-//     case 2:
-//       let withdraw_amount = parseInt(prompt("Enter amount to withdraw"));
 
-//       if (withdraw_amount < bal) {
-//          bal = bal - withdraw_amount;
-//         alert(bal);
-//       } else {
-//         alert("Cannot withdraw greater than your balance");
-//       }
-//       break;
-//     case 3:
-//       let deposit_amount = parseInt(prompt("Enter amount to deposit"));
-//       bal = bal + deposit_amount;
-//       alert(bal);
-//       break;
-//     case 4:
-//         start = false;
-//       break;
-//   }
-// }
+let bal = 5000;
+let start = true;
+while (start) {
+  let input = parseInt(
+    prompt(
+      "Select: \n [1] Check Balance \n [2] Withdraw \n [3] Deposit \n [4] Exit"
+    )
+  );
+  
+  switch (input) {
+    case 1:
+      alert(bal);
+      break;
+    case 2:
+      let withdraw_amount = parseInt(prompt("Enter amount to withdraw"));
+
+      if (withdraw_amount < bal) {
+         bal = bal - withdraw_amount;
+        alert(bal);
+      } else {
+        alert("Cannot withdraw greater than your balance");
+      }
+      break;
+    case 3:
+      let deposit_amount = parseInt(prompt("Enter amount to deposit"));
+      bal = bal + deposit_amount;
+      alert(bal);
+      break;
+    case 4:
+        start = false;
+      break;
+  }
+}
 
 /**
  * 1. Create a simple calculator using switch-case with html and JS
